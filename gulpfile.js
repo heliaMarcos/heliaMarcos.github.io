@@ -28,7 +28,9 @@ let styles = () => {
 
 let scripts = () => {
 	return gulp.src([
-		'./js/*.js',
+		'node_modules/uikit3/dist/js/uikit.min.js',
+		'node_modules/uikit3/dist/js/uikit-icons.min.js',
+		'js/main.js',
 		])
 	.pipe(concat('scripts.min.js'))
 	.pipe(gulp.dest('./js'))
@@ -85,7 +87,7 @@ let watch = () => {
 		notify: false,
 	});
   gulp.watch('./scss/**/*.scss', styles);
-	gulp.watch('./js/main.js', scripts);
+	gulp.watch(['./node_modules/uikit/**/*.js', './js/main.js'], scripts);
   gulp.watch('./*.html', html);
 };
 
