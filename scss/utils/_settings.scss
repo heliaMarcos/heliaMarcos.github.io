@@ -1,0 +1,18 @@
+$bg-color                     : #F7F7F7;
+$green                        : #E3EDE1;
+$dark-gray                    : #212121;
+
+$global-color                 : $dark-gray;
+$global-link-color            : $green;
+$global-primary-background    : $bg-color;
+$global-secondary-background  : $green;
+
+$global-font-family: Tahoma, sans-serif !default;
+
+// UIKIT imports
+@import "node_modules/uikit/src/scss/variables-theme.scss";
+@import "node_modules/uikit/src/scss/mixins-theme.scss";
+
+@mixin hook-card() { color: $dark-gray; }
+
+@import "node_modules/uikit/src/scss/uikit-theme.scss";

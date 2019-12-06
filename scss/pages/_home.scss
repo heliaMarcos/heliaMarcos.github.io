@@ -1,0 +1,88 @@
+/*--------------------------------------------------------------
+ CONTENTS:
+----------------------------------------------------------------
+1.0 Top
+2.0 Website Development
+3.0 UI/UX Design
+4.0 Photography
+5.0 Contact me
+--------------------------------------------------------------*/
+
+.top-name {
+    color: $green;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------
+ 1.0 TOP
+--------------------------------------------------------------*/
+section#top {
+    .navbar {
+        .uk-navbar-nav a {
+            font-size: 12px;
+            color: $dark-gray;
+            min-height: 0;
+        }
+        .uk-navbar-dropdown {
+            box-shadow: none;
+            padding: 15px;
+        }
+    }
+    .about-text {
+        line-height: 26px;
+        a {
+            font-weight: 600;
+        }
+    }
+    .uk-divider-small {
+        margin-top: 40px;
+        &:after {
+            border-color: $green;
+            border-width: 4px;
+            width: 150px;
+        }
+    }
+}
+
+
+/*--------------------------------------------------------------
+ 2.0 WEBSITE DEVELOPMENT
+--------------------------------------------------------------*/
+section#development {
+  color: $dark-gray;
+  hr {
+      border-color: $dark-gray;
+      border-width: 2px;
+      margin: 20px 0;
+  }
+  .uk-grid-match {
+      margin: 80px 0;
+  }
+}
+
+
+/*--------------------------------------------------------------
+ 3.0 UI/UX DESIGN
+--------------------------------------------------------------*/
+section#design {
+}
+
+
+/*--------------------------------------------------------------
+ 4.0 PHOTOGRAPHY
+--------------------------------------------------------------*/
+section#photography {
+}
+
+
+/*--------------------------------------------------------------
+ 5.0 CONTACT ME
+--------------------------------------------------------------*/
+section#contact {
+    background-color: $dark-gray;
+    color: $bg-color;
+    .section__title {
+        color: $bg-color;
+    }
+}
