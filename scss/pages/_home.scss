@@ -12,6 +12,14 @@
     color: $green;
     font-size: 18px;
     text-transform: uppercase;
+    .uk-flex:hover .blinking {
+        animation-name: blink;
+        animation-duration: 0.9s;
+        animation-iteration-count: infinite;
+    }
+    .blinking {
+        padding-right: 5px;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -31,12 +39,16 @@ section#top {
     }
     .about-text {
         line-height: 26px;
+        opacity: 1;
         a {
             font-weight: 600;
         }
+        &--hidden {
+            opacity: 0;
+        }
     }
     .uk-divider-small {
-        margin-top: 40px;
+        margin-top: 60px;
         &:after {
             border-color: $green;
             border-width: 4px;
@@ -66,6 +78,21 @@ section#development {
  3.0 UI/UX DESIGN
 --------------------------------------------------------------*/
 section#design {
+    .image {
+        background-color: $dark-gray;
+        height: 500px;
+        text-align: center;
+        img {
+            height: 350px;
+        }
+        .image-caption {
+            color: $bg-color;
+            padding-bottom: 10px;
+        }
+    }
+    .right-column {
+        padding-left: 0;
+    }
 }
 
 
@@ -73,16 +100,32 @@ section#design {
  4.0 PHOTOGRAPHY
 --------------------------------------------------------------*/
 section#photography {
+    .image-caption {
+        padding-bottom: 30px;
+    }
 }
 
 
 /*--------------------------------------------------------------
  5.0 CONTACT ME
 --------------------------------------------------------------*/
+.pacman-bathroom {
+    background-color: $green;
+    &__image {
+      background-image: url('/assets/pacman-bathroom.png');
+      background-position: center;
+      background-size: cover;
+      height: 700px;
+    }
+}
+
 section#contact {
     background-color: $dark-gray;
     color: $bg-color;
     .section__title {
         color: $bg-color;
+    }
+    .uk-icon-link:active, .uk-active > .uk-icon-link, .uk-icon-link:hover, .uk-icon-link:focus {
+        color: $green;
     }
 }

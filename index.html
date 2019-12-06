@@ -8,18 +8,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--<meta property="og:image" content="path/to/image.jpg">-->
-    <link rel="icon" href="img/favicon/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
     <meta name="theme-color" content="#333">
 
     <link rel="stylesheet" href="css/style.min.css" />
 </head>
 <body>
 
-    <div class="top-name uk-container uk-section-default uk-padding-small">
-      <span class="uk-flex uk-flex-right@m">Hélia Marcos</span>
+    <!-- TOP NAME -->
+    <div class="top-name uk-section-default">
+      <div class="uk-container uk-padding-small">
+        <span class="uk-flex uk-flex-right@m"> <!--<span>&#62;</span><span class='blinking'>_ </span>--> <span>Hélia Marcos</span></span>
+      </div>
     </div>
 
+    <!-- Section: TOP -->
     <section class="uk-section uk-section-default" id="top">
         <div class="uk-container">
             <div class="uk-grid uk-grid-match uk-child-width-1-2@m" uk-grid>
@@ -27,7 +31,7 @@
                 <div class="navbar">
                     <div class="" uk-navbar="mode: click">
                         <ul class="uk-navbar-nav">
-                            <li class="uk-active"><a href="#">About</a></li>
+                            <li class="uk-active"><a uk-toggle="target: #about; cls: about-text--hidden">About</a></li>
                             <li>
                                 <a href="#">What I do</a>
                                 <div class="uk-navbar-dropdown">
@@ -38,89 +42,135 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="#" uk-scroll>Contact me</a></li>
+                            <li><a href="#contact" uk-scroll>Contact me</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="uk-navbar-right has-font-courier about-text">
-                  <p>A certain king had a beautiful garden, and in the garden stood a tree which bore golden apples. These apples were always counted, and about the time when they began to grow ripe it was found that every night one of them was gone. The king became very angry at this, and ordered the gardener to keep watch all night under the tree.</p>
-                  <p>The gardener set his eldest son to watch; but about twelve o’clock he fell asleep, and in the morning another of the.</p>
-                  <p>
-                    <a href="#"> CURRICULUM VITAE</a>
-                  </p>
+                <div class="uk-navbar-right has-font-courier about-text about-text--hidden" id="about">
+                  <p>I've been working as a front-end developer for 3 years now. I was developing products for the UK's Real Estate industry, building a CRM for agents as well as their websites on WordPress. I also have some freelance projects on WordPress.</p>
+                  <p>I'm now looking for new opportunities and to explore new technologic fields and mindsets.</p>
+                  <!-- <p>
+                    <a href="/assets/cv.pdf" target="_blank">&raquo; CURRICULUM VITAE</a>
+                  </p> -->
                 </div>
             </div>
         </div>
         <hr class="uk-divider-small uk-text-center">
     </section>
 
-
+    <!-- Section: WEBSITE DEVELOPMENT -->
     <section class="uk-section uk-section-secondary uk-preserve-color" id="development">
         <div class="uk-container">
             <hr>
             <div class="uk-grid uk-grid-match uk-child-width-1-2@m" uk-grid>
                 <div class="">
-                    <h1 class="section__title">Website Development</h1>
+                    <h1 class="section__title uk-padding-remove-bottom">Website Development</h1>
                 </div>
                 <div class="has-font-courier">
-                    <p class="has-font-courier">Lorem sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <p class="has-font-courier">My skill set:</p>
+                    <div class="uk-inline">
+                        <span>HTML . </span><span>CSS . </span><span>SASS . </span><span>JavaScript . </span><span>jQuery . </span><span>Vue.js . </span>
+                        <span>WordPress . </span><span>Bulma . </span><span>Bootstrap . </span><span>Git . </span><span>Gulp </span>
+                  </div>
                 </div>
             </div>
             <hr>
         </div>
     </section>
 
-
-    <section class="uk-section uk-section-default uk-section-small" id="design">
-        <div class="uk-container">
-            <div class="uk-grid uk-grid-match uk-child-width-1-2@m" uk-grid>
-                <div class="">
-                    <p class="has-font-courier">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, placeat sit asperiores, tempora dicta necessitatibus accusamus eaque voluptatibus maiores facere itaque et! Modi nam tenetur ipsam pariatur, officia nisi totam.</p>
+    <!-- Section: UI/UX DESIGN -->
+    <section class="uk-section" id="design">
+        <div class="">
+            <div class="uk-grid uk-child-width-1-3@m" uk-grid>
+                <div class="image uk-inline uk-width-1-2">
+                    <img class="uk-position-center" src="/assets/website-mockup.png" alt="">
+                    <span class="image-caption uk-position-small uk-position-bottom-right">1. Website mockup for my personal website</span>
                 </div>
-                <div class="">
-                    <h2 class="section__title">UI/UX Design</h2>
+                <div class="uk-section-default right-column">
+                    <div class="uk-section-secondary" style="height: 50px;"></div>
+                    <div class="uk-section-default uk-padding">
+                        <div class="">
+                            <h2 class="section__title">UI/UX Design</h2>
+                        </div>
+                        <div class="right-column__text">
+                            <p class="has-font-courier">I've been creating design mockups on UXPin platform as part of my work on my company. I try to make my designs simple and user-friendly, keeping in mind a cross-platform good experience.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <div class="uk-width-1-6 uk-section-secondary uk-margin-remove" style="height:400px;">
 
-
-    <section class="uk-section uk-section-default" id="photography">
-        <div class="uk-container">
-            <div class="uk-grid uk-grid-match uk-child-width-1-2@m" uk-grid>
-                <div class="">
-                    <h2 class="section__title">Photography</h2>
-                </div>
-                <div class="">
-                    <p class="has-font-courier">Lorem <a href="https://getuikit.com/docs/introduction" uk-tooltip="Framework UIKit3">ipsum dolor</a> sit amet, consectetur adipisicing elit. Illo, placeat sit asperiores, tempora dicta necessitatibus accusamus eaque voluptatibus maiores facere itaque et! Modi nam tenetur ipsam pariatur, officia nisi totam.</p>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Section: PHOTOGRAPHY -->
+    <section class="uk-section" id="photography">
+        <div class="">
+            <div class="uk-grid uk-child-width-1-3@m" uk-grid>
+                <div class="uk-width-1-6"></div>
+                <div class="">
+                    <div class="" style="height:50px;"></div>
+                    <div class="uk-section-default uk-padding" style="height:640px;">
+                        <div class="">
+                            <h2 class="section__title">Photography</h2>
+                        </div>
+                        <div class="">
+                            <p class="has-font-courier">I've been photographing since I was a kid, and it's one of the things I enjoy the most to do on my spare time. I don't much professional experience in the field but it's never to late to start!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-2 uk-padding-remove">
+                    <img src="/assets/azores.jpg" alt="capelinhos">
+                    <div class="uk-text-right">
+                      <span class="image-caption">2. Furious ocean in Capelinhos, Azores</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <div class="uk-grid uk-grid-match uk-child-width-1-2@m uk-grid-collapse pacman-bathroom" uk-grid>
+        <div class="pacman-bathroom__image uk-width-2-3">
+
+        </div>
+        <div class="uk-width-1-3">
+            <div class="uk-inline" style="height: 500px;">
+              <span class="uk-caption image-caption uk-position-bottom-left">3. An AirBnB Bathroom in Buenos Aires</span>
+            </div>
+            <div class="" style="background-color: #212121; height: 200px;">
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Section: CONTACT ME -->
     <section class="uk-section uk-section-default" id="contact">
         <div class="uk-container uk-text-center">
             <div class="">
                 <h2 class="section__title">Contact me</h2>
             </div>
             <div class="has-font-courier">
-                <p>helia.marcos [at] gmail.com</p>
+                <p>helia.marcos@gmail.com</p>
             </div>
             <div>
                 <p class="">
-                    <a href="#" class="uk-icon-button uk-margin-small-right" uk-icon="linkedin" uk-tooltip="Twitter"></a>
-                    <a href="#" class="uk-icon-button  uk-margin-small-right" uk-icon="github" uk-tooltip="Facebook"></a>
-                    <a href="#" class="uk-icon-button" uk-icon="instagram" uk-tooltip="Google Plus"></a>
+                    <a href="https://www.linkedin.com/in/helia-marcos/" target="_blank" class="uk-icon-link uk-margin-small-right" uk-icon="linkedin"></a>
+                    <a href="https://github.com/heliaMarcos/" target="_blank" class="uk-icon-link uk-margin-small-right" uk-icon="github"></a>
+                    <a href="https://instagram.com/hel.mar_" target="_blank" class="uk-icon-link" uk-icon="instagram"></a>
                 </p>
             </div>
         </div>
     </section>
 
-    <footer class="uk-footer">
-        <div class="uk-text-right">
-            <p class="uk-margin-remove">Designed and Developed by Hélia Marcos</p>
+    <!-- FOOTER -->
+    <footer class="uk-footer uk-section">
+        <div class="uk-container">
+            <div class="uk-text-right">
+                <p class="uk-margin-remove">Designed and developed by Hélia Marcos</p>
+            </div>
         </div>
     </footer>
 

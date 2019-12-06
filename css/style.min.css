@@ -11443,6 +11443,28 @@ iframe.uk-cover {
   font-family: 'Courier New', serif;
 }
 
+@-webkit-keyframes blink {
+  0%, 100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-moz-keyframes blink {
+  0%, 100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  50% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 /* ==========================================================================
  * Base
  * ==========================================================================
@@ -11458,6 +11480,7 @@ body {
   color: #212121;
   font-size: 44px;
   letter-spacing: 4px;
+  padding-bottom: 30px;
   text-transform: uppercase;
 }
 
@@ -11478,16 +11501,12 @@ h1, h2 {
   letter-spacing: 2px;
 }
 
-h1 {
-  font-size: 28px;
-}
-
-h2 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
+.image-caption {
+  color: #212121;
+  font-family: 'Courier New', serif;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 0 5px;
 }
 
 /* ==========================================================================
@@ -11513,6 +11532,16 @@ h3 {
   text-transform: uppercase;
 }
 
+.top-name .uk-flex:hover .blinking {
+  animation-name: blink;
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
+}
+
+.top-name .blinking {
+  padding-right: 5px;
+}
+
 /*--------------------------------------------------------------
  1.0 TOP
 --------------------------------------------------------------*/
@@ -11529,14 +11558,19 @@ section#top .navbar .uk-navbar-dropdown {
 
 section#top .about-text {
   line-height: 26px;
+  opacity: 1;
 }
 
 section#top .about-text a {
   font-weight: 600;
 }
 
+section#top .about-text--hidden {
+  opacity: 0;
+}
+
 section#top .uk-divider-small {
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 section#top .uk-divider-small:after {
@@ -11565,12 +11599,46 @@ section#development .uk-grid-match {
 /*--------------------------------------------------------------
  3.0 UI/UX DESIGN
 --------------------------------------------------------------*/
+section#design .image {
+  background-color: #212121;
+  height: 500px;
+  text-align: center;
+}
+
+section#design .image img {
+  height: 350px;
+}
+
+section#design .image .image-caption {
+  color: #F7F7F7;
+  padding-bottom: 10px;
+}
+
+section#design .right-column {
+  padding-left: 0;
+}
+
 /*--------------------------------------------------------------
  4.0 PHOTOGRAPHY
 --------------------------------------------------------------*/
+section#photography .image-caption {
+  padding-bottom: 30px;
+}
+
 /*--------------------------------------------------------------
  5.0 CONTACT ME
 --------------------------------------------------------------*/
+.pacman-bathroom {
+  background-color: #E3EDE1;
+}
+
+.pacman-bathroom__image {
+  background-image: url("/assets/pacman-bathroom.png");
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+}
+
 section#contact {
   background-color: #212121;
   color: #F7F7F7;
@@ -11578,4 +11646,8 @@ section#contact {
 
 section#contact .section__title {
   color: #F7F7F7;
+}
+
+section#contact .uk-icon-link:active, section#contact .uk-active > .uk-icon-link, section#contact .uk-icon-link:hover, section#contact .uk-icon-link:focus {
+  color: #E3EDE1;
 }
