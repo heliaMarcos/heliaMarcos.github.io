@@ -25,8 +25,5 @@
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "imagemin-pngquant": "^5.1.0"
-  },
-  "dependencies": {
-    "uikit": "^3.2.4"
   }
 }

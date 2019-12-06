@@ -10,9 +10,9 @@ $global-secondary-background  : $green;
 $global-font-family: Tahoma, sans-serif !default;
 
 // UIKIT imports
-@import "node_modules/uikit/src/scss/variables-theme.scss";
-@import "node_modules/uikit/src/scss/mixins-theme.scss";
+@import "libs/uikit3/src/scss/variables-theme.scss";
+@import "libs/uikit3/src/scss/mixins-theme.scss";
 
 @mixin hook-card() { color: $dark-gray; }
 
-@import "node_modules/uikit/src/scss/uikit-theme.scss";
+@import "libs/uikit3/src/scss/uikit-theme.scss";

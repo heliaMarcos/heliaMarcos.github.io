@@ -1,4 +1,5 @@
-let gulpversion   = '4';
+let syntax        = 'scss', // Syntax: sass or scss;
+		gulpversion   = '4'; // Верcия Gulp;
 
 let gulp           = require('gulp'),
 		gutil          = require('gulp-util' ),
@@ -28,8 +29,9 @@ let styles = () => {
 
 let scripts = () => {
 	return gulp.src([
-		'node_modules/uikit3/dist/js/uikit.min.js',
-		'node_modules/uikit3/dist/js/uikit-icons.min.js',
+		'libs/jquery/jquery-3.2.1.min.js',
+		'libs/uikit3/dist/js/uikit.min.js',
+		'libs/uikit3/dist/js/uikit-icons.min.js',
 		'js/main.js',
 		])
 	.pipe(concat('scripts.min.js'))
@@ -47,11 +49,10 @@ let clean = () => {
 };
 
 let imgmin = () => {
-	return gulp.src('./assets/**/*')
+	return gulp.src('./img/**/*')
 	.pipe(imagemin())
-	.pipe(gulp.dest('./dist/assets'))
+	.pipe(gulp.dest('./dist/img'))
 };
-
 
 let buildHtml = () => {
 	return gulp.src('./*.html')
@@ -68,7 +69,9 @@ let buildCss = () => {
 
 let buildFiles = () => {
 	return gulp.src([
-	  './*.txt',
+	  //'./app/*.php',
+	  //'./app/*.xml',
+	  './app/*.txt',
 	  ]).pipe(gulp.dest('./dist'))
 };
 
@@ -85,11 +88,15 @@ let watch = () => {
 			baseDir: './'
 		},
 		notify: false,
+		// open: false,
+		// online: false, // Work Offline Without Internet Connection
+		// tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
 	});
-  gulp.watch('./scss/**/*.scss', styles);
-	gulp.watch(['./node_modules/uikit/**/*.js', './js/main.js'], scripts);
+  gulp.watch('./'+syntax+'/**/*.'+syntax+'', styles);
+  gulp.watch(['./libs/**/*.js', './js/main.js'], scripts);
   gulp.watch('./*.html', html);
 };
+
 
 gulp.task('styles', styles);
 gulp.task('scripts', scripts);
@@ -101,7 +108,6 @@ gulp.task('buildFiles', buildFiles);
 gulp.task('buildJs', buildJs);
 
 if (gulpversion == 4) {
-
 gulp.task('build', gulp.series(clean,
 	                 gulp.parallel(buildHtml, buildCss, buildJs, buildFiles, imgmin))
 );
@@ -110,6 +116,14 @@ gulp.task('default', gulp.series(watch, browserSync));
 gulp.task('watch', gulp.series(watch, browserSync));
 
 };
+
+
+gulp.task('deploy', () => {
+	var globs = [
+	'dist/**',
+	];
+	return gulp.src(globs, {buffer: false});
+});
 
 
 gulp.task('clearcache', () => { return cache.clearAll(); });
