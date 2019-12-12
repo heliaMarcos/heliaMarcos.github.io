@@ -11599,6 +11599,10 @@ section#development .uk-grid-match {
 /*--------------------------------------------------------------
  3.0 UI/UX DESIGN
 --------------------------------------------------------------*/
+section#design {
+  padding-top: 0;
+}
+
 section#design .image {
   background-color: #212121;
   height: 500px;
@@ -11618,11 +11622,19 @@ section#design .right-column {
   padding-left: 0;
 }
 
+section#design .green-bg {
+  background-color: #E3EDE1;
+}
+
 /*--------------------------------------------------------------
  4.0 PHOTOGRAPHY
 --------------------------------------------------------------*/
 section#photography .image-caption {
   padding-bottom: 30px;
+}
+
+section#photography .content-wrapper {
+  height: 515px;
 }
 
 /*--------------------------------------------------------------

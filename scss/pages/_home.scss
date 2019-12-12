@@ -78,6 +78,7 @@ section#development {
  3.0 UI/UX DESIGN
 --------------------------------------------------------------*/
 section#design {
+    padding-top: 0;
     .image {
         background-color: $dark-gray;
         height: 500px;
@@ -93,6 +94,9 @@ section#design {
     .right-column {
         padding-left: 0;
     }
+    .green-bg {
+        background-color: $green;
+    }
 }
 
 
@@ -102,6 +106,9 @@ section#design {
 section#photography {
     .image-caption {
         padding-bottom: 30px;
+    }
+    .content-wrapper {
+      height: 515px;
     }
 }
 
