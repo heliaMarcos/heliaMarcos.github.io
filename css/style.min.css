@@ -11443,6 +11443,15 @@ iframe.uk-cover {
   font-family: 'Courier New', serif;
 }
 
+@media (max-width: 640px) {
+  .uk-grid > * {
+    padding: 0 10px;
+  }
+  .uk-padding {
+    padding: 10px;
+  }
+}
+
 @-webkit-keyframes blink {
   0%, 100% {
     opacity: 0;
@@ -11603,6 +11612,12 @@ section#design {
   padding-top: 0;
 }
 
+@media (max-width: 640px) {
+  section#design {
+    background-color: #212121;
+  }
+}
+
 section#design .image {
   background-color: #212121;
   height: 500px;
@@ -11622,6 +11637,13 @@ section#design .right-column {
   padding-left: 0;
 }
 
+@media (max-width: 640px) {
+  section#design .right-column {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+}
+
 section#design .green-bg {
   background-color: #E3EDE1;
 }
@@ -11629,12 +11651,42 @@ section#design .green-bg {
 /*--------------------------------------------------------------
  4.0 PHOTOGRAPHY
 --------------------------------------------------------------*/
+section#photography .gray-block {
+  background-color: #F7F7F7;
+}
+
+section#photography .left-block {
+  background-color: #fff;
+  padding-left: 0;
+}
+
+@media (max-width: 640px) {
+  section#photography .left-block {
+    padding-left: 30px;
+    padding-right: 0;
+  }
+}
+
 section#photography .image-caption {
   padding-bottom: 30px;
 }
 
 section#photography .content-wrapper {
   height: 515px;
+}
+
+@media (max-width: 640px) {
+  section#photography .content-wrapper {
+    height: 250px;
+  }
+}
+
+section#photography .white-block {
+  background-color: #fff;
+}
+
+section#photography .caption-block {
+  height: 40px;
 }
 
 /*--------------------------------------------------------------
@@ -11662,4 +11714,9 @@ section#contact .section__title {
 
 section#contact .uk-icon-link:active, section#contact .uk-active > .uk-icon-link, section#contact .uk-icon-link:hover, section#contact .uk-icon-link:focus {
   color: #E3EDE1;
+}
+
+.footer {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }

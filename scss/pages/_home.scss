@@ -79,6 +79,9 @@ section#development {
 --------------------------------------------------------------*/
 section#design {
     padding-top: 0;
+    @media (max-width: $breakpoint-small) {
+        background-color: $dark-gray;
+    }
     .image {
         background-color: $dark-gray;
         height: 500px;
@@ -93,6 +96,10 @@ section#design {
     }
     .right-column {
         padding-left: 0;
+        @media (max-width: $breakpoint-small) {
+            padding-left: 30px;
+            padding-right:0;
+        }
     }
     .green-bg {
         background-color: $green;
@@ -104,11 +111,33 @@ section#design {
  4.0 PHOTOGRAPHY
 --------------------------------------------------------------*/
 section#photography {
+    .gray-block {
+        background-color: $bg-color;
+    }
+    .left-block {
+        background-color: #fff;
+        padding-left: 0;
+        @media (max-width: $breakpoint-small) {
+            padding-left: 30px;
+            padding-right:0;
+        }
+    }
     .image-caption {
         padding-bottom: 30px;
     }
     .content-wrapper {
-      height: 515px;
+        height: 515px;
+        @media (max-width: $breakpoint-small) {
+            height: 250px;
+        }
+    }
+    .white-block {
+        background-color: #fff;
+        // height: 70px;
+        // width: 65px;
+    }
+    .caption-block {
+        height: 40px;
     }
 }
 
@@ -135,4 +164,9 @@ section#contact {
     .uk-icon-link:active, .uk-active > .uk-icon-link, .uk-icon-link:hover, .uk-icon-link:focus {
         color: $green;
     }
+}
+
+.footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
