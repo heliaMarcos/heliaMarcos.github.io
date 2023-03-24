@@ -1,6 +1,6 @@
-Portfolio website
+Photography Portfolio Website
 
 Built on:
-  - framework `UIKit3`
-  - gulp
-  - sass
+  - `Vue.js 3`
+  - `Tailwind`
+  - `Vite`
