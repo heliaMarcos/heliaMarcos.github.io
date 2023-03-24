@@ -5,8 +5,6 @@ import stylelint from 'vite-plugin-stylelint';
 import svgLoader from 'vite-svg-loader';
 import { resolve } from 'path';
 import Components from 'unplugin-vue-components/vite';
-import path from 'path'
-const pathSrc = path.resolve(__dirname, "./src");
 
 export default ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) };
@@ -33,9 +31,8 @@ export default ({ mode }) => {
     ],
     resolve: {
       alias: {
-        '@': path.resolve(__dirname, './src')
+        '@': resolve(__dirname, './src')
       },
-    },
-    extensions: ['.ts']
+    }
   });
 };

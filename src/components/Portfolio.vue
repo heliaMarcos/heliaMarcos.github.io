@@ -2,7 +2,8 @@
 import { onUnmounted, ref, watch } from 'vue';
 import gsap from 'gsap';
 
-import { useTransitionComposable } from '../composables/transition-composable';
+import images from '@/static/portfolio.json';
+import { useTransitionComposable } from '@/composables/transition-composable';
 </script>
 <template>
   <main class="mx-auto flex flex-col items-center justify-center py-16 pt-24">
@@ -44,7 +45,6 @@ import { useTransitionComposable } from '../composables/transition-composable';
   </main>
 </template>
 <script>
-import images from '../static/portfolio.json';
 
 const { transitionState } = useTransitionComposable();
 const main = ref();
