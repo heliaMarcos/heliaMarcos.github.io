@@ -2,8 +2,8 @@
 import { onUnmounted, ref, watch } from 'vue';
 import gsap from 'gsap';
 
-import images from '../src/static/portfolio.json';
-import { useTransitionComposable } from '../src/composables/transition-composable.js';
+import images from './src/static/portfolio.json';
+import { useTransitionComposable } from './src/composables/transition-composable.js';
 </script>
 <template>
   <main class="mx-auto flex flex-col items-center justify-center py-16 pt-24">
