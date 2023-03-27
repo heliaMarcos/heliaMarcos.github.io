@@ -2,12 +2,12 @@ import './assets/styles/fonts.css';
 import './assets/styles/main.css';
 import './assets/styles/tailwind.css';
 
-import { createApp } from '../../node_modules/vue';
-import { createRouter, createWebHistory } from '../../node_modules/vue-router';
+import { createApp } from 'vue';
+import { createRouter, createWebHistory } from 'vue-router';
 
-import gsap from '../../node_modules/gsap';
-import { ScrollTrigger } from '../../node_modules/gsap/ScrollTrigger';
-import { ScrollToPlugin } from '../../node_modules/gsap/ScrollToPlugin';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import { routes } from './routes.js';
 
 import App from './app.vue';
