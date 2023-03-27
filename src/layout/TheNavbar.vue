@@ -1,8 +1,5 @@
 <template>
-  <header
-    class="fixed inset-x-0 top-0 z-50"
-    :class="classObject"
-  >
+  <header class="fixed inset-x-0 top-0 z-50" :class="classObject">
     <nav
       class="mx-auto h-screen px-10 pt-4 pb-6 md:flex md:h-auto md:items-center md:justify-between md:pb-0"
     >
@@ -14,10 +11,7 @@
           hélia marcos
         </router-link>
         <!-- Mobile menu button -->
-        <div
-          class="flex md:hidden"
-          @click.prevent="toggleMenu"
-        >
+        <div class="flex md:hidden" @click.prevent="toggleMenu">
           <button
             type="button"
             class="origin-center font-mono text-3xl text-black transition duration-500 hover:text-black focus:text-black focus:outline-none dark:text-white"
@@ -70,24 +64,18 @@
               <transition
                 enter-active-class="transition duration-300 ease-out"
                 leave-active-class="transition duration-300 ease-in"
-                :enter-from-class="currentTheme === 'dark' ? 'opacity-0' : 'opacity-0'"
+                :enter-from-class="
+                  currentTheme === 'dark' ? 'opacity-0' : 'opacity-0'
+                "
                 enter-to-class=""
                 leave-from-class=""
-                :leave-to-class="currentTheme === 'dark' ? 'opacity-0' : 'opacity-0'"
+                :leave-to-class="
+                  currentTheme === 'dark' ? 'opacity-0' : 'opacity-0'
+                "
                 mode="out-in"
               >
-                <span
-                  v-if="currentTheme === 'dark'"
-                  class="text-xl"
-                >
-                  ☾
-                </span>
-                <span
-                  v-else
-                  class="text-xl"
-                >
-                  ☀
-                </span>
+                <span v-if="currentTheme === 'dark'" class="text-xl"> ☾ </span>
+                <span v-else class="text-xl"> ☀ </span>
               </transition>
             </button>
           </li>
@@ -110,9 +98,9 @@ export default {
   computed: {
     classObject() {
       return {
-        'bg-white': this.showMenu && this.currentTheme === 'light',
-        'bg-black': this.showMenu && this.currentTheme === 'dark',
-        'bg-transparent': !this.showMenu,
+        "bg-white": this.showMenu && this.currentTheme === "light",
+        "bg-black": this.showMenu && this.currentTheme === "dark",
+        "bg-transparent": !this.showMenu,
       };
     },
   },
@@ -131,12 +119,10 @@ body {
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.3s ease;
-
 }
 
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
-
 }
 </style>

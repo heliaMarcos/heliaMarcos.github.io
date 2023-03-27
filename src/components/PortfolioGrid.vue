@@ -1,9 +1,9 @@
 <script setup>
-import { onUnmounted, ref, watch } from 'vue';
-import gsap from 'gsap';
+import { onUnmounted, ref, watch } from "vue";
+import gsap from "gsap";
 
-import images from '../static/portfolio.json';
-import { useTransitionComposable } from '../composables/transition-composable.js';
+import images from "../static/portfolio.json";
+import { useTransitionComposable } from "../composables/transition-composable.js";
 </script>
 <template>
   <main class="mx-auto flex flex-col items-center justify-center py-16 pt-24">
@@ -18,15 +18,11 @@ import { useTransitionComposable } from '../composables/transition-composable.js
           :src="images.portfolio.phototop.src"
           :alt="images.portfolio.phototop.alt"
           :class="images.portfolio.phototop.class"
-        >
+        />
       </div>
-    <!-- I M A G E S -->
+      <!-- I M A G E S -->
     </div>
-    <div
-      id="portfolioImages"
-      ref="main"
-      class="pt-4 sm:columns-1 md:columns-2"
-    >
+    <div id="portfolioImages" ref="main" class="pt-4 sm:columns-1 md:columns-2">
       <div class="w-1/2 md:h-52" />
       <div
         v-for="photo in images.portfolio.photos"
@@ -39,13 +35,12 @@ import { useTransitionComposable } from '../composables/transition-composable.js
           :src="photo.src"
           :class="photo.imgclass"
           :alt="photo.alt"
-        >
+        />
       </div>
     </div>
   </main>
 </template>
 <script>
-
 const { transitionState } = useTransitionComposable();
 const main = ref();
 const ctx = ref();
@@ -55,17 +50,17 @@ watch(
   (newValue) => {
     if (newValue && main.value) {
       ctx.value = gsap.context((self) => {
-        const portfolioImages = self.selector('#portfolioImages img');
+        const portfolioImages = self.selector("#portfolioImages img");
         portfolioImages.forEach((image) => {
           gsap.to(image, {
-            y: '-=83',
+            y: "-=83",
             stagger: 0.6,
             duration: 0.5,
             scrollTrigger: {
               trigger: image,
-              toggleAction: 'restart none reverse none',
-              start: 'top 70%',
-              end: 'bottom 20%',
+              toggleAction: "restart none reverse none",
+              start: "top 70%",
+              end: "bottom 20%",
               scrub: 0.8,
               markers: false,
             },
@@ -76,7 +71,7 @@ watch(
   },
   {
     immediate: true,
-  },
+  }
 );
 
 onUnmounted(() => {
@@ -84,8 +79,7 @@ onUnmounted(() => {
 });
 
 export default {
-  props: {
-  },
+  props: {},
   data() {
     return {
       images,

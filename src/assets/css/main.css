@@ -1,0 +1,6 @@
+@import "./tailwind.css";
+@import "./base.css";
+
+html {
+  @apply antialiased min-h-full;
+}
