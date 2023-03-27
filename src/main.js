@@ -2,7 +2,7 @@ import './assets/styles/fonts.css';
 import './assets/styles/main.css';
 import './assets/styles/tailwind.css';
 
-import { createApp } from './../node_modules/vue/';
+import { createApp } from './node_modules/vue/';
 import { createRouter, createWebHistory } from 'vue-router';
 
 import gsap from 'gsap';
