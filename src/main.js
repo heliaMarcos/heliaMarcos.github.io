@@ -8,7 +8,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 
 import router from "./router";
-import App from "./App.vue";
+import App from "./app.vue";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
