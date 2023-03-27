@@ -31,7 +31,6 @@ export default ({ mode }) => {
     ],
     resolve: {
       alias: {
-        '@': resolve(__dirname, 'src')
       },
     }
   });
