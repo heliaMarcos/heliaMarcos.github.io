@@ -12,6 +12,8 @@ import { routes } from './routes.js';
 
 import App from './app.vue';
 
+Vue.config.productionTip = false
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.VITE_BASE_PUBLIC_PATH),
   routes,
