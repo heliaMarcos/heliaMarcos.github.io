@@ -1,6 +1,6 @@
 import "./assets/css/main.css";
 
-import { createApp } from "vue/dist/vue.esm-bundler.js";
+import { createApp } from "./../node_modules/vue/dist/vue.esm-bundler.js";
 import { createPinia } from "pinia";
 
 import gsap from 'gsap';
