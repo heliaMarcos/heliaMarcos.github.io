@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import { onUnmounted, ref, watch } from "vue";
 import gsap from "gsap";
 
@@ -40,7 +40,7 @@ import { useTransitionComposable } from "../composables/transition-composable.js
     </div>
   </main>
 </template>
-<script>
+<script lang="ts">
 const { transitionState } = useTransitionComposable();
 const main = ref();
 const ctx = ref();

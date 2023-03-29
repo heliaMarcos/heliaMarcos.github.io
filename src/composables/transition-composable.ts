@@ -1,8 +1,8 @@
-import { reactive } from "vue";
+import { reactive } from "vue"
 
 const transitionState = reactive({
   transitionComplete: null,
-});
+})
 
 export const useTransitionComposable = () => {
   const toggleTransitionComplete = (value) => {
@@ -13,4 +13,4 @@ export const useTransitionComposable = () => {
     transitionState,
     toggleTransitionComplete,
   };
-};
+}
