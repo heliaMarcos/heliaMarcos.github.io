@@ -1,9 +1,9 @@
-<script setup lang="ts">
+<script setup>
   import { onUnmounted, ref, watch } from "vue";
   import gsap from "gsap";
 
-  import images from "../static/portfolio.json";
-  import { useTransitionComposable } from "../composables/transition-composable.ts";
+  import images from "./../data/portfolio.json";
+  import { useTransitionComposable } from "./../composables/transition-composable.js";
 </script>
 <template>
   <main class="mx-auto flex flex-col items-center justify-center py-16 pt-24">
@@ -40,7 +40,7 @@
     </div>
   </main>
 </template>
-<script lang="ts">
+<script>
 const { transitionState } = useTransitionComposable();
 const main = ref();
 const ctx = ref();

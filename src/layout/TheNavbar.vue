@@ -1,17 +1,3 @@
-<script setup lang="ts">
-  
-    defineProps({
-      switchTheme: {
-          type: Function,
-          default: '',
-      },
-      currentTheme: {
-          type: String,
-          default: '',
-      },
-    })
-    
-</script>
 <template>
   <header class="fixed inset-x-0 top-0 z-50" :class="classObject">
     <nav
@@ -98,8 +84,12 @@
     </nav>
   </header>
 </template>
-<script lang="ts">
+<script>
   export default {
+    props: {
+      switchTheme: Function,
+      currentTheme: String
+    },
     data() {
       return {
         showMenu: false,
