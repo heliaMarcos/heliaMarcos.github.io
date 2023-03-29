@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted } from "vue";
 import { RouterView } from "vue-router";
-import { currentTheme, initTheme, switchTheme } from "./composables/theme.js";
+import { currentTheme, initTheme, switchTheme } from "./composables/theme.ts";
 import Navbar from "./layout/TheNavbar.vue";
 
 onMounted(() => {

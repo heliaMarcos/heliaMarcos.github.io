@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import { onUnmounted, ref, watch } from "vue";
-import gsap from "gsap";
+  import { onUnmounted, ref, watch } from "vue";
+  import gsap from "gsap";
 
-import images from "../static/portfolio.json";
-import { useTransitionComposable } from "../composables/transition-composable.js";
+  import images from "../static/portfolio.json";
+  import { useTransitionComposable } from "../composables/transition-composable.ts";
 </script>
 <template>
   <main class="mx-auto flex flex-col items-center justify-center py-16 pt-24">
@@ -79,7 +79,6 @@ onUnmounted(() => {
 });
 
 export default {
-  props: {},
   data() {
     return {
       images,
