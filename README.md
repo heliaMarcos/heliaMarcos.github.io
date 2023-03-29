@@ -6,5 +6,3 @@
 - [Pinia 2.0](https://pinia.vuejs.org/)
 - [Router 4.1](https://router.vuejs.org/)
 - [Tailwind CSS 3.1](https://tailwindcss.com/)
-- eslint 8.5
-- prettier 2.5
