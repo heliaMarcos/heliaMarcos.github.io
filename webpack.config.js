@@ -72,6 +72,12 @@ module.exports = (env) => {
         },
         {
           test: /\.(jpg)$/,
+          include: [path.resolve(__dirname, "./src")],
+          use: ["file-loader"],
+        },
+        {
+          test: /\.(png)$/,
+          include: [path.resolve(__dirname, "./src")],
           use: ["file-loader"],
         },
       ],

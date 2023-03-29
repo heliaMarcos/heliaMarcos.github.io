@@ -4,7 +4,7 @@
             "no":"01",
             "title": "Railay beach viewpoint",
             "alt": "Railay beach viewpoint",
-            "src": "/src/assets/img/01.png",
+            "src": "./assets/img/01.png",
             "class": "",
             "imgclass": ""
         },
@@ -12,7 +12,7 @@
                 "no":"02",
                 "title": "Way in Talad Noi",
                 "alt": "Girl in Bangkok Chinatown",
-                "src": "/src/assets/img/02.jpg",
+                "src": "./assets/img/02.jpg",
                 "class": "pt-40",
                 "imgclass": "max-h-screen w-auto mx-auto"
             },
@@ -20,7 +20,7 @@
                 "no":"03",
                 "title": "Koh Lanta",
                 "alt": "sunset at the ocean on black and white",
-                "src": "/src/assets/img/03.jpg",
+                "src": "./assets/img/03.jpg",
                 "class": "pt-52",
                 "imgclass": "max-h-screen w-auto"
             },
@@ -28,7 +28,7 @@
                 "no":"04",
                 "title": "Doris hand",
                 "alt": "Woman hand with sunset light",
-                "src": "/src/assets/img/04.jpg",
+                "src": "./assets/img/04.jpg",
                 "class": "pt-28",
                 "imgclass": "max-h-screen w-auto"
             },
@@ -36,7 +36,7 @@
                 "no":"05",
                 "title": "Way",
                 "alt": "Blurry photo of a asian girl",
-                "src": "/src/assets/img/05.jpg",
+                "src": "./assets/img/05.jpg",
                 "class": "pt-52",
                 "imgclass": "max-h-screen w-auto ml-auto sm:ml-0"
             },
@@ -44,7 +44,7 @@
                 "no":"06",
                 "title": "Romulo",
                 "alt": "back of a man taking off his shirt",
-                "src": "/src/assets/img/06.jpg",
+                "src": "./assets/img/06.jpg",
                 "class": "pt-28",
                 "imgclass": "max-h-screen w-auto"
             },
@@ -52,7 +52,7 @@
                 "no":"07",
                 "title": "Bird of paradise",
                 "alt": "Bird of paradise flower",
-                "src": "/src/assets/img/09.jpg",
+                "src": "./assets/img/09.jpg",
                 "class": "sm:pt-52 pt-28",
                 "imgclass": "max-h-screen w-auto mx-auto sm:mx-0"
             },
@@ -60,7 +60,7 @@
                 "no":"08",
                 "title": "Don't even ask",
                 "alt": "Stones and corals on a mirror outside",
-                "src": "/src/assets/img/08.jpg",
+                "src": "./assets/img/08.jpg",
                 "class": "pt-28",
                 "imgclass": "max-h-screen w-auto"
             },
@@ -68,7 +68,7 @@
                 "no":"09",
                 "title": "Doris",
                 "alt": "Girl outside during the day, on black and white",
-                "src": "/src/assets/img/10.jpg",
+                "src": "./assets/img/10.jpg",
                 "class": "pt-52",
                 "imgclass": "max-h-screen w-auto mx-auto"
             },
@@ -76,7 +76,7 @@
                 "no":"10",
                 "title": "Rosa de Santa Teresinha",
                 "alt": " Roses",
-                "src": "/src/assets/img/11.png",
+                "src": "./assets/img/11.png",
                 "class": "pt-28",
                 "imgclass": "max-h-screen w-auto ml-auto"
             },
@@ -84,7 +84,7 @@
                 "no":"11",
                 "title": "Sea treasures",
                 "alt": "3 different shells over a mirror",
-                "src": "/src/assets/img/07.jpg",
+                "src": "./assets/img/07.jpg",
                 "class": "pt-28",
                 "imgclass": "max-h-screen w-auto"
             },
@@ -92,7 +92,7 @@
                 "no":"12",
                 "title": "Way in Talad Noi",
                 "alt": "Asian girl in Bangkok Chinatown",
-                "src": "/src/assets/img/12.jpg",
+                "src": "./assets/img/12.jpg",
                 "class": "pt-28",
                 "imgclass": "max-h-screen w-auto ml-auto"
             },
@@ -100,7 +100,7 @@
                 "no":"13",
                 "title": "Milena",
                 "alt": "Girl seated on a lake platform",
-                "src": "/src/assets/img/13.jpg",
+                "src": "./assets/img/13.jpg",
                 "class": "pt-52",
                 "imgclass": "max-h-screen w-auto mx-auto"
             }
