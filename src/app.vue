@@ -1,12 +1,7 @@
 <script setup>
 import { onMounted } from 'vue';
-import { currentTheme, initTheme, switchTheme } from './composables/theme.js';
+import { currentTheme, switchTheme } from './composables/theme.js';
 import Navbar from './layout/TheNavbar.vue';
-
-onMounted(() => {
-  initTheme();
-});
-
 </script>
 <template>
     <Navbar :current-theme="currentTheme" :switch-theme="switchTheme" />

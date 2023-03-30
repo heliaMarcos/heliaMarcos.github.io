@@ -1,7 +1,8 @@
 <template>
   <header class="fixed inset-x-0 top-0 z-50" :class="classObject">
     <nav
-      class="mx-auto h-screen px-10 pt-4 pb-6 md:flex md:h-auto md:items-center md:justify-between md:pb-0"
+      class="mx-auto px-10 pt-4 pb-6 md:flex md:h-auto md:items-center md:justify-between md:pb-0"
+      :class="!showMenu ? '' : 'h-screen'"
     >
       <div class="flex items-center justify-between">
         <router-link
@@ -32,6 +33,7 @@
             <router-link
               class="cursor-crosshair text-xs uppercase tracking-[2px] text-black transition duration-300 hover:text-stone-400 dark:text-white"
               to="/info"
+              @click.prevent="toggleMenu"
             >
               Info
             </router-link>
